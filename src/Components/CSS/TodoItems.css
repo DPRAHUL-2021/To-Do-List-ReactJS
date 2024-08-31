@@ -1,0 +1,46 @@
+.todoitems {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px; /* Reduced padding for more compact list items */
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0; /* Soft border for separating items */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+.todoitems:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+}
+
+.todoitems-container {
+    display: flex;
+    align-items: center; /* Vertically center the checkbox and text */
+}
+
+.todoitems-text {
+    padding-left: 16px;
+    color: #404040;
+    font-size: 20px; /* Slightly reduced font size for better look */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.todoitems-cross-icon {
+    cursor: pointer;
+    padding-right: 10px; /* Reduced padding for a tighter look */
+    opacity: 0.7; /* Slightly faded cross icon */
+    transition: opacity 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.todoitems-cross-icon:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(0.9); /* Slightly larger icon on hover */
+}
+
+.todoitems-container img {
+    width: 24px; /* Ensure consistent size for icons */
+    height: 24px;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.todoitems-container img:hover {
+    transform: scale(0.9); /* Slightly enlarge the checkbox on hover */
+}
